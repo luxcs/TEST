@@ -1,0 +1,59 @@
+.topHeaderNav{
+    // display: flex;+
+    // justify-content: center;
+    width: 100%;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    z-index: 980;
+    min-width: 1000px;
+    height: 26px;
+    .leftTopHeaderNav{
+        position: absolute;
+        left: 0;
+        p{
+            margin-right: 6px;
+            float: left;
+            line-height: 26px;
+            box-shadow: 0 0 black;
+            }
+        a{
+            margin-right: 6px;
+            float: left;
+            line-height: 26px;
+            box-shadow: 0 0 black;
+        }
+   }
+    .rightTopHeaderNav{
+        position: absolute;
+        right: 0;
+        // width: 680px;
+        height: 26px;
+        line-height: 26px;
+        .rthn-1{
+            padding: 0 4px 0 7px;
+            border-left: 1px solid #f2f2f2;
+            border-right: 1px solid #f2f2f2;
+        }
+        li{
+            height: 26px;
+            float: left;
+            padding: 0 5px;
+            position: relative;
+            a:hover{
+                color :#cc0001 ;
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}
+
+
+@for $i from 1 to 9 {
+    .rthn-#{$i} a{
+        @if $i % 2 == 0{
+            color: #cc0001;
+        }
+    }
+}

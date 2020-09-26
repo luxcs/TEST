@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:#999;
+    font-size: 12px;
+}
+ul,ol{
+    list-style: none;
+}
+.center{
+
+    width: 1200px;
+    left:0;
+    right:0;
+    margin: auto;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+

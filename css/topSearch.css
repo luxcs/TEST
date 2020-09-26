@@ -1,0 +1,69 @@
+.topSearch {
+  width: 100%;
+  height: 125px; }
+.topSearch .center {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+.topSearch .center .search {
+  width: 540px;
+  height: 60px; }
+.topSearch .center .search form {
+  height: 32px;
+  border: 3px solid #c00;
+  position: relative; }
+.topSearch .center .search form input {
+  vertical-align: middle;
+  outline: 0; }
+.topSearch .center .search form .searchText {
+  width: 439px;
+  height: 22px;
+  line-height: 22px;
+  padding: 5px;
+  border: 0 none;
+  color: #666;
+  float: left; }
+.topSearch .center .search form .searchBtn {
+  width: 85px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  font-family: "Microsoft Yahei";
+  float: right;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  background: #cc0000; }
+.topSearch .center .search .hotwords {
+  width: 540px;
+  height: 18px;
+  overflow: hidden;
+  padding-top: 5px;
+  line-height: 18px; }
+.topSearch .center .search .hotwords a {
+  float: left;
+  color: #999;
+  padding: 0 8px;
+  height: 18px;
+  position: relative; }
+.topSearch .center .search .hotwords a:hover {
+  color: red; }
+
+i {
+  display: block;
+  height: 12px;
+  width: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 1px solid #999;
+  position: absolute;
+  left: -1px;
+  top: 3px; }
+
+/*# sourceMappingURL=topSearch.css.map */
