@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,YAAY;EAGR,UAAU,EAAC,iDAAiD;EAC5D,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI",
-"sources": ["../sass/topFocusBox.scss"],
-"names": [],
-"file": "topFocusBox.css"
-}

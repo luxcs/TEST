@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,SAAS;EACL,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,CAAC;EACN,KAAK,EAAE,CAAC;EACR,OAAO,EAAE,KAAK;EACd,UAAU,EAAE,OAAO;EACnB,UAAU,EAAE,gBAAgB;EAC5B,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM",
-"sources": ["../sass/rightNav.scss"],
-"names": [],
-"file": "rightNav.css"
-}

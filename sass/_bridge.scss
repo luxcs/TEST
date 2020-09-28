@@ -1,0 +1,122 @@
+.bridge{
+    height: 690px;
+    width: 100%;
+    overflow: hidden;
+    .bridgeTitle{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background: #f9f9f9;
+        padding: 0 3px;
+        .comTitle{
+            width: 90px;
+            float: left;
+            font-size: 0;
+            span{
+                display: inline-block;
+                vertical-align: middle;
+                color: #333;
+                font-size: 17px;
+                margin-left: 10px;
+                font-family: "Microsoft Yahei";
+            }
+        }
+        .rightMenu{
+            width: 370px;
+            float: right;
+            margin-left: 50px;
+            // display: inline;
+            height: 40px;
+            line-height: 40px;
+            background: #f9f9f9;
+            padding: 0 3px;
+            color: #999;
+            a{
+                padding: 0 7px;
+                color: #999;
+            }
+            .bridgeRightMenuNameF1{
+                padding: 4px 7px;
+                color: #fff;
+                background: #d43d4e;
+                height: 21px;
+                border-radius: 2px;
+            }
+        }
+    }
+    .bridgeBanner{
+        height: 485px;
+        width: 210px;
+        position: relative;
+        overflow: hidden;
+        float: left;
+    }
+    .bridgeList{
+        width: 990px;
+        float: right;
+        height: 485px;
+        overflow: hidden;
+        position: relative;
+        li{
+            float: left;
+            width: 197px;
+            height: 243px;
+            border-bottom: 1px solid #ececec;
+            border-left: 1px solid #ececec;
+            position: relative;
+            padding-top: 10px;
+            .listPic{
+                text-align: center;
+                img{
+                    img{
+                        width: 160px;
+                        height: 160px;
+                        // margin: 0 auto;
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+            }
+            .listName{
+                width: 160px;
+                padding: 0 18px;
+                height: 36px;
+                overflow: hidden;
+                margin-top: 5px;
+                p{
+                    display: block;
+                    width: 100%;
+                    height: 18px;
+                    line-height: 18px;
+                    font-size: 12px;
+                }
+            }
+            .listPrice{
+                width: 178px;
+                padding: 0 0 0 18px;
+                height: 18px;
+                overflow: hidden;
+                line-height: 18px;
+                white-space: nowrap;
+                p{
+
+                    font-size: 12px;
+                    font-weight: normal;
+                    font-family: "Microsoft Yahei";
+                    color: #CD0100;
+                    display: inline;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+.bridgeBox{
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    border-top: 2px solid #c94b56;
+    height: 485px;
+    overflow: hidden;
+    width: 1200px;
+}

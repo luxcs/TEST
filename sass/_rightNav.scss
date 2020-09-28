@@ -1,0 +1,110 @@
+.rightNav{
+    width: 35px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    background: #ffffff;
+    box-shadow: 1px 2px 5px #999;
+    .rightNav1{
+        width: 35px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 311;
+        text-align: center;
+        height: 365px;
+        margin-top: -182.5px;
+        div{
+            width: 35px;
+            padding: 10px 0;
+            position: relative;
+            z-index: 350;
+            cursor: pointer;
+            background: none;
+            text-align: center;
+            .icon{
+                background-image: url(../src/public-24.png);
+                background-repeat: no-repeat;;
+//display: block ;
+                width: 19px;
+                height: 19px;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .spanText{
+                display: block;
+                font-family: "Microsoft Yahei";
+                line-height: 16px;
+                color: #333333;
+                padding: 2px 0 0;
+            }
+        }
+        .rightNavMine{
+            .icon{
+                background-position: 0 -163px;
+            }
+        }
+        .rightNavCollect{
+            .icon{
+                background-position: -40px -163px;
+            }
+        }
+        .rightNavCart{
+            .icon{
+                background-position: -120px -163px;
+            }
+            .spanText{
+                width: 14px;
+                font-size: 14px;
+                margin: 0 10px 0 11px;
+                padding: 6px 0 4px;
+            }
+        }
+        .rightNavService{
+            .icon{
+                background-position: -45px -331px;
+            }
+        }
+    }
+    .rightNav2{
+        width: 35px;
+        position: absolute;
+        bottom: 30px;
+        right: 0;
+        text-align: center;
+        div{
+            width: 35px;
+            position: relative;
+            margin: 0;
+            padding: 8px 0;
+            z-index: 350;
+            cursor: pointer;
+            background: none;
+            text-align: center;
+            p{
+                background-image: url(../src/public-24.png);
+                width: 19px;
+                height: 16px;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        .rightNav2-1{
+            p{
+                background-position: 3px -186px;
+            }
+        }
+        .rightNav2-2{
+            p{
+                background-position: -19px -186px;
+            }
+        }
+        .rightNav2-3{
+            p{
+                background-position: -40px -186px;
+            }
+        }
+    }
+}
