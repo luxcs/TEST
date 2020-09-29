@@ -1,0 +1,87 @@
+.mainBanner{
+    width: 100%;
+    position: relative;
+    height: 470px;
+    background: #f9f9f9;
+    overflow: hidden;
+    li{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 470px;
+        background: #f9f9f9;
+        overflow: hidden;
+        .mav{
+            height: 470px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 190px;
+            z-index: 7;
+            a{
+                background: url(../src/mav_1.png) no-repeat;
+                display: block;
+                height: 156px;
+                position: relative;
+                width: 190px;
+                z-index: 8;
+                margin-bottom: 1px
+            }
+            span{
+                display: none;
+                height: 156px;
+                width: 190px;
+                position: absolute;
+                z-index: 7;
+                background: #fff;
+                opacity: 0.5
+            }
+            a:hover span{
+                display: block;
+            }
+        }
+    }
+}
+.smallBtn{
+    height: 20px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 435px;
+    width: 100%;
+    z-index: 2000000;
+    ul{
+        height: 20px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        // top: 435px;
+        width: 100%;
+        z-index: 20;
+        li{
+            position: static;
+            background: #000;
+            border-radius: 50%;
+            box-shadow: 0 0 3px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            zoom: 1;
+            font-size: 12px;
+            height: 20px;
+            line-height: 20px;
+            margin-right: 8px;
+            opacity: 0.8;
+            width: 20px;
+            text-align: center;
+            overflow: hidden;
+        
+        }
+    }
+}
+
+
+.active{
+    background-color: #dd102e !important;
+}

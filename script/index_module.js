@@ -24,6 +24,45 @@ define([],function(){
                 });
                 $('.bridgeList').html(strhtml);
             })
-        }
+        },
+        tabChance1:(function(){
+            const $btns = $('.navWrap .nav2ndMenu .catItem');
+            const $divs = $('.navWrap .nav2ndMenu .menuBox');
+        
+            $btns.on('mouseout',function(){
+                $divs.hide();
+            })
+            $btns.on('mouseover', function() {
+                $divs.eq($(this).index()).show().siblings('div').hide();
+            });
+        })(),
+        tabChance2:(function(){
+            const $btns1 = $('.indexTabNav li');
+            const $divs1 = $('.indexTabCon');
+            $btns1.on('mouseover', function() {
+                $(this).addClass('on').siblings('li').removeClass('on');
+                $divs1.eq($(this).index()).show().siblings('.indexTabCon').hide();
+            });
+        })(),
+        tabChance3:(function(){
+            const $btns2 = $('.indexTabNewNav li');
+            const $divs2 = $('.indexTabNavConBox');
+            $btns2.on('mouseover', function() {
+                $(this).addClass('on').siblings('li').removeClass('on');
+                $divs2.eq($(this).index()).show().siblings('.indexTabNavConBox').hide();
+            });
+        })(),
+        tabChance4:(function(){
+            const $btns3 = $('.topTenNavBox a');
+            const $divs3 = $('.topTenCon .clearfix');
+            $btns3.on('mouseover', function() {
+                console.log($divs3);
+                $(this).addClass('on').siblings("a").removeClass('on');
+                $divs3.eq($(this).index()).show().siblings(".clearfix").hide();
+            });
+        })(),
+        banner:(function(){
+
+        })()
     }
 })

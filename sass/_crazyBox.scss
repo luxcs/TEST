@@ -1,0 +1,98 @@
+.crazyBox{
+    width: 100%;
+    height: 500px;
+    .indexTabBox{
+        width: 925px;
+        float: left;
+        background: #fff;
+        height: 499px;
+        .indexTabNav{
+            overflow: hidden;
+            height: 38px;
+            position: relative;
+            width: 925px;
+            ul{
+                width: 100%;
+                height: 38px;
+                li{
+                    left: 0;
+                    width: 183px;
+                    border-left: 1px solid #ececec;
+                    border-right: 1px solid #ececec;
+                    border-bottom: 1px solid #ececec;
+                    border-top: 2px solid #ececec;
+                    height: 35px;
+                    position: absolute;
+                    top: 0;
+                    cursor: pointer;
+                    text-align: center;
+                    line-height: 35px;
+                    font-size: 16px;
+                    color: #666;
+                    font-family: "M";
+                    background: #f9f9f9;
+                }
+                li.on{
+                    border-top: 2px solid #cc0000;
+                    border-bottom: 1px solid #fff;
+                    color: #cc0000;
+                }
+            }
+        }
+        .indexTabConWrap{
+            border: 1px solid #ececec;
+            border-top: none;
+            height: 460px;
+            overflow: hidden;
+        }
+    }
+    .indexTabRight{
+        width: 270px;
+        float: right;
+        height: 500px;
+        .indexTabNew{
+            width: 270px;
+            height: 140px;
+            background: #fff;
+            overflow: hidden;
+            .indexTabNewNav{
+                height: 35px;
+                position: relative;
+                li{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    font-size: 16px;
+                    font-family: " Microsoft YaHei ";
+                    color: #666;
+                    text-align: center;
+                    width: 134px;
+                    height: 35px;
+                    border: 1px solid #ececec;
+                    line-height: 35px;
+                    cursor: pointer;
+                    background: #f9f9f9;
+                }
+                li.on{
+                    border-top: 2px solid #c41921;
+                    border-bottom: 1px solid #fff;
+                    height: 34px;
+                    color: #cc0000;
+                    line-height: 33px;
+                    background: #fff;
+                }
+            }
+            .indexTabNewCon{
+                border: 1px solid #ececec;
+                border-top: none;
+                height: 94px;
+                padding-top: 10px;
+                width: 100%;
+                .indexTabNewConBox{
+                    width: 258px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

@@ -5,75 +5,93 @@
   position: relative;
   z-index: 980;
   min-width: 1000px;
-  height: 26px; }
+  height: 26px;
+}
 .topHeaderNav .leftTopHeaderNav {
   position: absolute;
-  left: 0; }
+  left: 0;
+}
 .topHeaderNav .leftTopHeaderNav p {
   margin-right: 6px;
   float: left;
   line-height: 26px;
-  box-shadow: 0 0 black; }
+  box-shadow: 0 0 black;
+}
 .topHeaderNav .leftTopHeaderNav a {
   margin-right: 6px;
   float: left;
   line-height: 26px;
-  box-shadow: 0 0 black; }
+  box-shadow: 0 0 black;
+}
 .topHeaderNav .rightTopHeaderNav {
   position: absolute;
   right: 0;
   height: 26px;
-  line-height: 26px; }
+  line-height: 26px;
+}
 .topHeaderNav .rightTopHeaderNav .rthn-1 {
   padding: 0 4px 0 7px;
   border-left: 1px solid #f2f2f2;
-  border-right: 1px solid #f2f2f2; }
+  border-right: 1px solid #f2f2f2;
+}
 .topHeaderNav .rightTopHeaderNav li {
   height: 26px;
   float: left;
   padding: 0 5px;
-  position: relative; }
+  position: relative;
+}
 .topHeaderNav .rightTopHeaderNav li a:hover {
   color: #cc0001;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .rthn-2 a {
-  color: #cc0001; }
+  color: #cc0001;
+}
 
 .rthn-4 a {
-  color: #cc0001; }
+  color: #cc0001;
+}
 
 .rthn-6 a {
-  color: #cc0001; }
+  color: #cc0001;
+}
 
 .rthn-8 a {
-  color: #cc0001; }
+  color: #cc0001;
+}
 
 .topFocusBox {
   background: url(../src/title.jpg) no-repeat top center scroll;
   display: block;
   width: 100%;
-  height: 90px; }
+  height: 90px;
+}
 
 .topSearch {
   width: 100%;
-  height: 125px; }
+  height: 125px;
+}
 .topSearch .center {
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+}
 .topSearch .center .search {
   width: 540px;
-  height: 60px; }
+  height: 60px;
+}
 .topSearch .center .search form {
   height: 32px;
   border: 3px solid #c00;
-  position: relative; }
+  position: relative;
+}
 .topSearch .center .search form input {
   vertical-align: middle;
-  outline: 0; }
+  outline: 0;
+}
 .topSearch .center .search form .searchText {
   width: 439px;
   height: 22px;
@@ -81,7 +99,8 @@
   padding: 5px;
   border: 0 none;
   color: #666;
-  float: left; }
+  float: left;
+}
 .topSearch .center .search form .searchBtn {
   width: 85px;
   height: 32px;
@@ -96,23 +115,26 @@
   border-style: initial;
   border-color: initial;
   border-image: initial;
-  background: #cc0000; }
+  background: #cc0000;
+}
 .topSearch .center .search .hotwords {
   width: 540px;
   height: 18px;
   overflow: hidden;
   padding-top: 5px;
-  line-height: 18px; }
+  line-height: 18px;
+}
 .topSearch .center .search .hotwords a {
   float: left;
   color: #999;
   padding: 0 8px;
   height: 18px;
-  position: relative; }
+  position: relative;
+}
 .topSearch .center .search .hotwords a:hover {
-  color: red; }
-
-i {
+  color: red;
+}
+.topSearch i {
   display: block;
   height: 12px;
   width: 0;
@@ -121,19 +143,693 @@ i {
   border-left: 1px solid #999;
   position: absolute;
   left: -1px;
-  top: 3px; }
+  top: 3px;
+}
 
 .navWrap {
   width: 100%;
   height: 34px;
   background: #990000;
-  position: relative; }
-.navWrap .nav2ndMenu {
+  position: relative;
+}
+.navWrap .navList {
+  width: 890px;
+  height: 34px;
+  float: left;
+}
+.navWrap .navList li {
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+.navWrap .navList li a {
+  padding: 0 22px;
+  display: inline-block;
+  height: 34px;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Microsoft Yahei";
+  background: url(../src/navLine.png) no-repeat left center;
+}
+.navWrap .navList li a:hover {
+  background: #b40c10;
+}
+.navWrap .navList .home {
+  background-image: none;
+  background: #b40c10;
+}
+.navWrap .adjuestment {
+  width: 120px;
+  height: 34px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mainBody {
+  width: 100%;
+}
+.mainBody .mainWrap {
+  width: 100%;
+  background: #f9f9f9;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+.mainBody .mainWrap .bgLeft {
+  width: 100%;
+  position: absolute;
+  left: -500px;
+  top: 0;
+  height: 1000px;
+  z-index: 0;
+}
+.mainBody .mainWrap .bgLeft a {
+  background: url(../src/left.png) no-repeat right top;
+  width: 500px;
+  height: 1000px;
+  display: block;
+  outline: none;
+}
+.mainBody .mainWrap .bgRight {
+  width: 100%;
+  position: absolute;
+  right: -500px;
+  height: 1000px;
+  top: 0;
+  z-index: 0;
+}
+.mainBody .mainWrap .bgRight a {
+  background: url(../src/right.png) no-repeat right top;
+  width: 500px;
+  height: 1000px;
+  display: block;
+  outline: none;
+  float: right;
+}
+.mainBody .mainWrap .fixDiv {
+  top: 309.5px;
+  left: 50%;
+  transform: scaleY(1.5);
+  opacity: 0;
+  z-index: 10;
+  margin-left: -650px;
+  position: none;
+  width: 40px;
+  height: 205px;
+}
+
+.footerTopBox {
+  width: 100%;
+  background-color: #333;
+}
+.footerTopBox .footerTopTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 84px;
+  border-bottom: 1px solid #494949;
+  align-items: center;
+}
+.footerTopBox .footerTopTop .contact {
+  height: 40px;
+  line-height: 40px;
+  padding: 22px 0;
+}
+.footerTopBox .footerTopTop .contact div {
+  width: 40px;
+  height: 40px;
+  background-position: -144px -22px;
+  margin-right: 18px;
+  float: left;
+  background-image: url(../src/public-24.png);
+}
+.footerTopBox .footerTopTop .contact b {
+  font-size: 24px;
+  color: #c00;
+  margin-right: 25px;
+  float: left;
+  line-height: 40px;
+}
+.footerTopBox .footerTopTop .contact span {
+  font-size: 14px;
+  color: #fff;
+  margin-right: 8px;
+  float: left;
+}
+.footerTopBox .footerTopTop .emailText {
+  height: 32px;
+}
+.footerTopBox .footerTopTop .emailText .footeRightTitle {
+  width: 100px;
+  float: left;
+  line-height: 32px;
+  color: white;
+  padding-right: 10px;
+}
+.footerTopBox .footerTopTop .emailText .emailTextForm {
+  float: left;
+  width: 240px;
+  height: 30px;
+  border: 1px solid #494949;
+}
+.footerTopBox .footerTopTop .emailText .emailTextForm input {
+  width: 190px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 6px;
+  background: 0;
+  border: 0;
+  float: left;
+  color: #fff;
+  outline: 0;
+}
+.footerTopBox .footerServices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 204px;
+}
+.footerTopBox .footerServices li {
+  list-style: none;
+  width: 158px;
+}
+.footerTopBox .footerServices li h3 {
+  display: inline-block;
+  font-weight: normal;
+  height: 26px;
+  line-height: 26px;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.footerTopBox .footerServices li p {
+  height: 26px;
+  line-height: 26px;
+  padding-left: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 123px;
+}
+.footerTopBox .footerServices div {
+  list-style: none;
+  width: 158px;
+}
+
+.rightNav {
+  width: 35px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  background: #ffffff;
+  box-shadow: 1px 2px 5px #999;
+}
+.rightNav .rightNav1 {
+  width: 35px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 311;
+  text-align: center;
+  height: 365px;
+  margin-top: -182.5px;
+}
+.rightNav .rightNav1 div {
+  width: 35px;
+  padding: 10px 0;
+  position: relative;
+  z-index: 350;
+  cursor: pointer;
+  background: none;
+  text-align: center;
+}
+.rightNav .rightNav1 div .icon {
+  background-image: url(../src/public-24.png);
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  text-align: center;
+  margin: 0 auto;
+}
+.rightNav .rightNav1 div .spanText {
+  display: block;
+  font-family: "Microsoft Yahei";
+  line-height: 16px;
+  color: #333333;
+  padding: 2px 0 0;
+}
+.rightNav .rightNav1 .rightNavMine .icon {
+  background-position: 0 -163px;
+}
+.rightNav .rightNav1 .rightNavCollect .icon {
+  background-position: -40px -163px;
+}
+.rightNav .rightNav1 .rightNavCart .icon {
+  background-position: -120px -163px;
+}
+.rightNav .rightNav1 .rightNavCart .spanText {
+  width: 14px;
+  font-size: 14px;
+  margin: 0 10px 0 11px;
+  padding: 6px 0 4px;
+}
+.rightNav .rightNav1 .rightNavService .icon {
+  background-position: -45px -331px;
+}
+.rightNav .rightNav2 {
+  width: 35px;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  text-align: center;
+}
+.rightNav .rightNav2 div {
+  width: 35px;
+  position: relative;
+  margin: 0;
+  padding: 8px 0;
+  z-index: 350;
+  cursor: pointer;
+  background: none;
+  text-align: center;
+}
+.rightNav .rightNav2 div p {
+  background-image: url(../src/public-24.png);
+  width: 19px;
+  height: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+.rightNav .rightNav2 .rightNav2-1 p {
+  background-position: 3px -186px;
+}
+.rightNav .rightNav2 .rightNav2-2 p {
+  background-position: -19px -186px;
+}
+.rightNav .rightNav2 .rightNav2-3 p {
+  background-position: -40px -186px;
+}
+
+.bridge {
+  height: 690px;
+  width: 100%;
+  overflow: hidden;
+}
+.bridge .bridgeTitle {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #f9f9f9;
+  padding: 0 3px;
+}
+.bridge .bridgeTitle .comTitle {
+  width: 90px;
+  float: left;
+  font-size: 0;
+}
+.bridge .bridgeTitle .comTitle i {
+  width: 28px;
+  height: 29px;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  font-family: Arial;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 29px;
+  font-style: normal;
+  background-image: url(../src/newIndexIcon-24.png);
+  background-position: 0 -95px;
+}
+.bridge .bridgeTitle .comTitle span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  font-size: 17px;
+  margin-left: 10px;
+  font-family: "Microsoft Yahei";
+}
+.bridge .bridgeTitle .rightMenu {
+  width: 370px;
+  float: right;
+  margin-left: 50px;
+  height: 40px;
+  line-height: 40px;
+  background: #f9f9f9;
+  padding: 0 3px;
+  color: #999;
+}
+.bridge .bridgeTitle .rightMenu a {
+  padding: 0 7px;
+  color: #999;
+}
+.bridge .bridgeTitle .rightMenu span {
+  color: #fff;
+}
+.bridge .bridgeTitle .rightMenu .bridgeRightMenuNameF1 {
+  padding: 4px 7px;
+  color: #fff;
+  background: #d43d4e;
+  height: 21px;
+  border-radius: 2px;
+}
+.bridge .bridgeBanner {
+  height: 485px;
+  width: 210px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+.bridge .bridgeList {
+  width: 990px;
+  float: right;
+  height: 485px;
+  overflow: hidden;
+  position: relative;
+}
+.bridge .bridgeList li {
+  float: left;
+  width: 197px;
+  height: 243px;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  position: relative;
+  padding-top: 10px;
+}
+.bridge .bridgeList li .listPic {
+  text-align: center;
+}
+.bridge .bridgeList li .listPic img img {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  z-index: 1;
+}
+.bridge .bridgeList li .listName {
+  width: 160px;
+  padding: 0 18px;
+  height: 36px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.bridge .bridgeList li .listName p {
+  display: block;
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+}
+.bridge .bridgeList li .listPrice {
+  width: 178px;
+  padding: 0 0 0 18px;
+  height: 18px;
+  overflow: hidden;
+  line-height: 18px;
+  white-space: nowrap;
+}
+.bridge .bridgeList li .listPrice p {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "Microsoft Yahei";
+  color: #CD0100;
+  display: inline;
+  vertical-align: middle;
+}
+
+.bridgeBox {
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-top: 2px solid #c94b56;
+  height: 485px;
+  overflow: hidden;
+  width: 1200px;
+}
+
+.bridgeTenWrap {
+  width: 100%;
+  height: 162px;
+}
+.bridgeTenWrap .topTenBox {
+  width: 985px;
+  float: right;
+  height: 162px;
+}
+.bridgeTenWrap .topTenBox .topTenConWrap {
+  width: 985px;
+  height: 102px;
+  padding: 10px 0 15px 0;
+  overflow: hidden;
+  position: relative;
+}
+.bridgeTenWrap .topTenBox .topTenConWrap .topTenCon {
+  height: 102px;
+  overflow: hidden;
+  width: 100%;
+}
+.bridgeTenWrap .topTenBox .topTenNavBox {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px;
+}
+.bridgeTenWrap .topTenBox .topTenNavBox h3 {
+  float: left;
+  font-size: 0;
+}
+.bridgeTenWrap .topTenBox .topTenNavBox h3 i {
+  background-position: -38px 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 13px;
+  overflow: hidden;
+  background-image: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png);
+}
+.bridgeTenWrap .topTenBox .topTenNavBox h3 span {
+  color: #d43d4e;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.bridgeTenWrap .topTenBox .topTenNavBox .topTenNav {
+  float: right;
+  height: 32px;
+}
+.bridgeTenWrap .topTenBox .topTenNavBox .topTenNav a {
+  font-size: 12px;
+  height: 32px;
+  padding: 0 10px;
+  display: block;
+  float: left;
+  color: #666;
+}
+.bridgeTenWrap .topTenBox .topTenNavBox .topTenNav a.on {
+  color: #cc0000;
+  text-decoration: none;
+}
+.bridgeTenWrap .topTenBox .topTenNavBox .topTenNav span {
+  float: left;
+  display: block;
+  color: #cccccc;
+}
+.bridgeTenWrap .hotWordBox {
+  float: left;
+  width: 186px;
+  border-right: 1px solid #ececec;
+  background: #f9f9f9;
+  height: 131px;
+  padding: 20px 10px 10px 14px;
+}
+.bridgeTenWrap .hotWordBox li {
+  width: 186px;
+}
+.bridgeTenWrap .hotWordBox li h3 {
+  color: #cc0000;
+  font-weight: bold;
+  padding-right: 5px;
+  font-size: 0;
+}
+.bridgeTenWrap .hotWordBox li h3 i {
+  width: 3px;
+  height: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  background: #d02229;
+  overflow: hidden;
+}
+.bridgeTenWrap .hotWordBox li h3 span {
+  color: #cc0000;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.bridgeTenWrap .hotWordBox li p {
+  padding-left: 8px;
+  width: 178px;
+  height: 36px;
+  line-height: 18px;
+  margin-top: 5px;
+}
+.bridgeTenWrap .hotWordBox li p a {
+  float: left;
+  padding-right: 10px;
+  font-size: 0;
+}
+.bridgeTenWrap .hotWordBox .mt7 {
+  margin-top: 7px;
+}
+
+.carzyBuy {
+  width: 100%;
+  height: 500px;
+}
+
+.recommend1 {
+  width: 100%;
+  height: 130px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.recommend1 img {
+  width: 290px;
+  height: 126px;
+}
+
+.recommend2 {
+  width: 100%;
+  height: 299px;
+  margin-top: 10px;
+}
+.recommend2 .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 40px;
+  background: #f9f9f9;
+}
+.recommend2 .title i {
+  background-position: 0 0;
+  margin-left: 3px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png);
+}
+.recommend2 .title p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 17px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.mainBanner {
+  width: 100%;
+  position: relative;
+  height: 470px;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+.mainBanner li {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 470px;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+.mainBanner li .mav {
+  height: 470px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 190px;
+  z-index: 7;
+}
+.mainBanner li .mav a {
+  background: url(../src/mav_1.png) no-repeat;
+  display: block;
+  height: 156px;
+  position: relative;
+  width: 190px;
+  z-index: 8;
+  margin-bottom: 1px;
+}
+.mainBanner li .mav span {
+  display: none;
+  height: 156px;
+  width: 190px;
+  position: absolute;
+  z-index: 7;
+  background: #fff;
+  opacity: 0.5;
+}
+.mainBanner li .mav a:hover span {
+  display: block;
+}
+
+.smallBtn {
+  height: 20px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 435px;
+  width: 100%;
+  z-index: 2000000;
+}
+.smallBtn ul {
+  height: 20px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 20;
+}
+.smallBtn ul li {
+  position: static;
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0 0 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  zoom: 1;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 8px;
+  opacity: 0.8;
+  width: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.active {
+  background-color: #dd102e !important;
+}
+
+.nav2ndMenu {
   width: 190px;
   float: left;
   position: relative;
-  z-index: 200; }
-.navWrap .nav2ndMenu h2 {
+  z-index: 200;
+}
+.nav2ndMenu h2 {
   width: 190px;
   height: 34px;
   line-height: 34px;
@@ -144,361 +840,190 @@ i {
   font-weight: normal;
   color: #fff;
   font-weight: 600;
-  box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.2); }
-.navWrap .nav2ndMenu ul {
+  box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.nav2ndMenu .menuBox {
+  width: 615px;
+  height: 470px;
+  position: absolute;
+  left: 190px;
+  top: 34px;
+  z-index: 301;
+  background: #fff;
+  box-shadow: 0 0 4px 0 #ccc;
+}
+.nav2ndMenu ul {
   width: 190px;
   height: 470px;
   position: absolute;
   top: 34px;
-  left: 0; }
-.navWrap .navList {
-  width: 890px;
-  height: 34px;
-  float: left; }
-.navWrap .navList li {
-  height: 34px;
-  line-height: 34px;
-  text-align: center;
-  float: left;
-  position: relative; }
-.navWrap .navList li a {
-  padding: 0 22px;
-  display: inline-block;
-  height: 34px;
-  color: #fff;
-  font-size: 14px;
-  font-family: "Microsoft Yahei";
-  background: url(../src/navLine.png) no-repeat left center; }
-.navWrap .navList li a:hover {
-  background: #b40c10; }
-.navWrap .navList .home {
-  background-image: none;
-  background: #b40c10; }
-.navWrap .adjuestment {
-  width: 120px;
-  height: 34px;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0; }
-
-.mainBody {
-  width: 100%; }
-.mainBody .mainBanner {
-  width: 100%;
-  position: relative;
-  height: 470px;
-  background: #f9f9f9;
-  overflow: hidden; }
-.mainBody .mainWrap {
-  width: 100%;
-  background: #f9f9f9;
-  padding: 10px 0;
-  overflow: hidden;
-  position: relative; }
-.mainBody .mainWrap .bgLeft {
-  width: 100%;
-  position: absolute;
-  left: -500px;
-  top: 0;
-  height: 1000px;
-  z-index: 0; }
-.mainBody .mainWrap .bgLeft a {
-  background: url(../src/left.png) no-repeat right top;
-  width: 500px;
-  height: 1000px;
-  display: block;
-  outline: none; }
-.mainBody .mainWrap .bgRight {
-  width: 100%;
-  position: absolute;
-  right: -500px;
-  height: 1000px;
-  top: 0;
-  z-index: 0; }
-.mainBody .mainWrap .bgRight a {
-  background: url(../src/right.png) no-repeat right top;
-  width: 500px;
-  height: 1000px;
-  display: block;
-  outline: none;
-  float: right; }
-.mainBody .mainWrap .fixDiv {
-  top: 309.5px;
-  left: 50%;
-  transform: scaleY(1.5);
-  opacity: 0;
-  z-index: 10;
-  margin-left: -650px;
-  position: none;
-  width: 40px;
-  height: 205px; }
-
-.footerTopBox {
-  width: 100%;
-  background-color: #333; }
-.footerTopBox .footerTopTop {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 84px;
-  border-bottom: 1px solid #494949;
-  align-items: center; }
-.footerTopBox .footerTopTop .contact {
-  height: 40px;
-  line-height: 40px;
-  padding: 22px 0; }
-.footerTopBox .footerTopTop .contact div {
-  width: 40px;
-  height: 40px;
-  background-position: -144px -22px;
-  margin-right: 18px;
-  float: left;
-  background-image: url(../src/public-24.png); }
-.footerTopBox .footerTopTop .contact b {
-  font-size: 24px;
-  color: #c00;
-  margin-right: 25px;
-  float: left;
-  line-height: 40px; }
-.footerTopBox .footerTopTop .contact span {
-  font-size: 14px;
-  color: #fff;
-  margin-right: 8px;
-  float: left; }
-.footerTopBox .footerTopTop .emailText {
-  height: 32px; }
-.footerTopBox .footerTopTop .emailText .footeRightTitle {
-  width: 100px;
-  float: left;
-  line-height: 32px;
-  color: white;
-  padding-right: 10px; }
-.footerTopBox .footerTopTop .emailText .emailTextForm {
-  float: left;
-  width: 240px;
-  height: 30px;
-  border: 1px solid #494949; }
-.footerTopBox .footerTopTop .emailText .emailTextForm input {
-  width: 190px;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 6px;
-  background: 0;
-  border: 0;
-  float: left;
-  color: #fff;
-  outline: 0; }
-.footerTopBox .footerServices {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: 204px; }
-.footerTopBox .footerServices li {
-  list-style: none;
-  width: 158px; }
-.footerTopBox .footerServices li h3 {
-  display: inline-block;
-  font-weight: normal;
-  height: 26px;
-  line-height: 26px;
-  padding: 5px 0;
-  font-size: 14px;
-  color: #fff;
-  overflow: hidden;
-  white-space: nowrap; }
-.footerTopBox .footerServices li p {
-  height: 26px;
-  line-height: 26px;
-  padding-left: 35px;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 123px; }
-.footerTopBox .footerServices div {
-  list-style: none;
-  width: 158px; }
-
-.rightNav {
-  width: 35px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 99999;
-  background: #ffffff;
-  box-shadow: 1px 2px 5px #999; }
-.rightNav .rightNav1 {
-  width: 35px;
-  position: absolute;
-  top: 50%;
   left: 0;
-  z-index: 311;
-  text-align: center;
-  height: 365px;
-  margin-top: -182.5px; }
-.rightNav .rightNav1 div {
-  width: 35px;
-  padding: 10px 0;
+  z-index: 999;
+}
+.nav2ndMenu ul .catItem:hover {
+  background: #f1f1f1;
+}
+.nav2ndMenu ul .catItem:hover .catItemCon {
+  border-left: 3px solid  #ce171f;
+}
+.nav2ndMenu ul .catItem {
   position: relative;
-  z-index: 350;
-  cursor: pointer;
-  background: none;
-  text-align: center; }
-.rightNav .rightNav1 div .icon {
-  background-image: url(../src/public-24.png);
-  background-repeat: no-repeat;
-  width: 19px;
-  height: 19px;
-  text-align: center;
-  margin: 0 auto; }
-.rightNav .rightNav1 div .spanText {
-  display: block;
-  font-family: "Microsoft Yahei";
-  line-height: 16px;
-  color: #333333;
-  padding: 2px 0 0; }
-.rightNav .rightNav1 .rightNavMine .icon {
-  background-position: 0 -163px; }
-.rightNav .rightNav1 .rightNavCollect .icon {
-  background-position: -40px -163px; }
-.rightNav .rightNav1 .rightNavCart .icon {
-  background-position: -120px -163px; }
-.rightNav .rightNav1 .rightNavCart .spanText {
-  width: 14px;
+  width: 190px;
+  float: left;
+  height: 81px;
+  background: #fff;
+  border-bottom: 1px solid #e4e4e4;
+}
+.nav2ndMenu ul .catItem .catItemCon {
+  width: 163px;
+  height: 100%;
+  padding: 0 10px;
+  border-left: 3px solid #fff;
+}
+.nav2ndMenu ul .catItem .catItemCon h3 {
+  line-height: 32px;
+  height: 32px;
   font-size: 14px;
-  margin: 0 10px 0 11px;
-  padding: 6px 0 4px; }
-.rightNav .rightNav1 .rightNavService .icon {
-  background-position: -45px -331px; }
-.rightNav .rightNav2 {
-  width: 35px;
-  position: absolute;
-  bottom: 30px;
-  right: 0;
-  text-align: center; }
-.rightNav .rightNav2 div {
-  width: 35px;
-  position: relative;
-  margin: 0;
-  padding: 8px 0;
-  z-index: 350;
-  cursor: pointer;
-  background: none;
-  text-align: center; }
-.rightNav .rightNav2 div p {
-  background-image: url(../src/public-24.png);
-  width: 19px;
-  height: 16px;
-  text-align: center;
-  margin: 0 auto; }
-.rightNav .rightNav2 .rightNav2-1 p {
-  background-position: 3px -186px; }
-.rightNav .rightNav2 .rightNav2-2 p {
-  background-position: -19px -186px; }
-.rightNav .rightNav2 .rightNav2-3 p {
-  background-position: -40px -186px; }
-
-.bridge {
-  height: 690px;
-  width: 100%;
-  overflow: hidden; }
-.bridge .bridgeTitle {
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  background: #f9f9f9;
-  padding: 0 3px; }
-.bridge .bridgeTitle .comTitle {
-  width: 90px;
-  float: left;
-  font-size: 0; }
-.bridge .bridgeTitle .comTitle span {
-  display: inline-block;
-  vertical-align: middle;
-  color: #333;
-  font-size: 17px;
-  margin-left: 10px;
-  font-family: "Microsoft Yahei"; }
-.bridge .bridgeTitle .rightMenu {
-  width: 370px;
-  float: right;
-  margin-left: 50px;
-  height: 40px;
-  line-height: 40px;
-  background: #f9f9f9;
-  padding: 0 3px;
-  color: #999; }
-.bridge .bridgeTitle .rightMenu a {
-  padding: 0 7px;
-  color: #999; }
-.bridge .bridgeTitle .rightMenu .bridgeRightMenuNameF1 {
-  padding: 4px 7px;
-  color: #fff;
-  background: #d43d4e;
-  height: 21px;
-  border-radius: 2px; }
-.bridge .bridgeBanner {
-  height: 485px;
-  width: 210px;
-  position: relative;
   overflow: hidden;
-  float: left; }
-.bridge .bridgeList {
-  width: 990px;
-  float: right;
-  height: 485px;
-  overflow: hidden;
-  position: relative; }
-.bridge .bridgeList li {
-  float: left;
-  width: 197px;
-  height: 243px;
-  border-bottom: 1px solid #ececec;
-  border-left: 1px solid #ececec;
-  position: relative;
-  padding-top: 10px; }
-.bridge .bridgeList li .listPic {
-  text-align: center; }
-.bridge .bridgeList li .listPic img img {
-  width: 160px;
-  height: 160px;
-  position: relative;
-  z-index: 1; }
-.bridge .bridgeList li .listName {
-  width: 160px;
-  padding: 0 18px;
-  height: 36px;
-  overflow: hidden;
-  margin-top: 5px; }
-.bridge .bridgeList li .listName p {
-  display: block;
-  width: 100%;
-  height: 18px;
-  line-height: 18px;
-  font-size: 12px; }
-.bridge .bridgeList li .listPrice {
-  width: 178px;
-  padding: 0 0 0 18px;
-  height: 18px;
-  overflow: hidden;
-  line-height: 18px;
-  white-space: nowrap; }
-.bridge .bridgeList li .listPrice p {
-  font-size: 12px;
   font-weight: normal;
-  font-family: "Microsoft Yahei";
-  color: #CD0100;
-  display: inline;
-  vertical-align: middle; }
+  padding-top: 3px;
+  color: #333;
+}
+.nav2ndMenu ul .catItem .catItemCon h3 i {
+  display: inline-block;
+  width: 14px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  background-image: url(../src/public-24.png);
+}
+.nav2ndMenu ul .catItem .catItemCon h3 a {
+  color: #333;
+}
+.nav2ndMenu ul .catItem .catItemCon .categoryCon {
+  width: 163px;
+  overflow: hidden;
+  position: relative;
+}
+.nav2ndMenu ul .catItem .catItemCon .categoryCon p {
+  width: 170px;
+  height: 20px;
+  overflow: hidden;
+}
+.nav2ndMenu ul .catItem .catItemCon .categoryCon p a {
+  height: 16px;
+  line-height: 16px;
+  padding: 0 4px;
+  color: #666;
+  float: left;
+  margin: 2px 3px 2px 0;
+}
+.nav2ndMenu ul .catItem .catItemCon .categoryCon p a.on {
+  background: #f90;
+  color: #fff;
+  border-radius: 3px;
+  line-height: 16px;
+}
 
-.bridgeBox {
+.crazyBox {
+  width: 100%;
+  height: 500px;
+}
+.crazyBox .indexTabBox {
+  width: 925px;
+  float: left;
+  background: #fff;
+  height: 499px;
+}
+.crazyBox .indexTabBox .indexTabNav {
+  overflow: hidden;
+  height: 38px;
+  position: relative;
+  width: 925px;
+}
+.crazyBox .indexTabBox .indexTabNav ul {
+  width: 100%;
+  height: 38px;
+}
+.crazyBox .indexTabBox .indexTabNav ul li {
+  left: 0;
+  width: 183px;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
-  border-top: 2px solid #c94b56;
-  height: 485px;
+  border-top: 2px solid #ececec;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  color: #666;
+  font-family: "M";
+  background: #f9f9f9;
+}
+.crazyBox .indexTabBox .indexTabNav ul li.on {
+  border-top: 2px solid #cc0000;
+  border-bottom: 1px solid #fff;
+  color: #cc0000;
+}
+.crazyBox .indexTabBox .indexTabConWrap {
+  border: 1px solid #ececec;
+  border-top: none;
+  height: 460px;
   overflow: hidden;
-  width: 1200px; }
+}
+.crazyBox .indexTabRight {
+  width: 270px;
+  float: right;
+  height: 500px;
+}
+.crazyBox .indexTabRight .indexTabNew {
+  width: 270px;
+  height: 140px;
+  background: #fff;
+  overflow: hidden;
+}
+.crazyBox .indexTabRight .indexTabNew .indexTabNewNav {
+  height: 35px;
+  position: relative;
+}
+.crazyBox .indexTabRight .indexTabNew .indexTabNewNav li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  font-family: " Microsoft YaHei ";
+  color: #666;
+  text-align: center;
+  width: 134px;
+  height: 35px;
+  border: 1px solid #ececec;
+  line-height: 35px;
+  cursor: pointer;
+  background: #f9f9f9;
+}
+.crazyBox .indexTabRight .indexTabNew .indexTabNewNav li.on {
+  border-top: 2px solid #c41921;
+  border-bottom: 1px solid #fff;
+  height: 34px;
+  color: #cc0000;
+  line-height: 33px;
+  background: #fff;
+}
+.crazyBox .indexTabRight .indexTabNew .indexTabNewCon {
+  border: 1px solid #ececec;
+  border-top: none;
+  height: 94px;
+  padding-top: 10px;
+  width: 100%;
+}
+.crazyBox .indexTabRight .indexTabNew .indexTabNewCon .indexTabNewConBox {
+  width: 258px;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=index.css.map */
