@@ -25,7 +25,7 @@ define([],function(){
                 $('.bridgeList').html(strhtml);
             })
         },
-        tabChance1:(function(){
+        tab2ndMenu:(function(){
             const $btns = $('.navWrap .nav2ndMenu .catItem');
             const $divs = $('.navWrap .nav2ndMenu .menuBox');
         
@@ -36,33 +36,74 @@ define([],function(){
                 $divs.eq($(this).index()).show().siblings('div').hide();
             });
         })(),
-        tabChance2:(function(){
-            const $btns1 = $('.indexTabNav li');
-            const $divs1 = $('.indexTabCon');
-            $btns1.on('mouseover', function() {
-                $(this).addClass('on').siblings('li').removeClass('on');
-                $divs1.eq($(this).index()).show().siblings('.indexTabCon').hide();
-            });
+        tabChance1:(function(){  
+            const chance = function(value1,value2){
+                const $btns1 = $(value1);
+                const $divs1 = $(value2);
+                $btns1.on('mouseover', function() {
+                    console.log($(this).index());
+                    $(this).addClass('on').siblings(value1).removeClass('on');
+                    $divs1.eq($(this).index()).show().siblings(value2).hide();
+                });
+            };
+            chance('.indexTabNav li','.indexTabCon');
+            chance('.indexTabNewNav li','.indexTabNavConBox');
+            chance('.topTenNavBox a','.topTenCon .clearfix');
         })(),
-        tabChance3:(function(){
-            const $btns2 = $('.indexTabNewNav li');
-            const $divs2 = $('.indexTabNavConBox');
-            $btns2.on('mouseover', function() {
-                $(this).addClass('on').siblings('li').removeClass('on');
-                $divs2.eq($(this).index()).show().siblings('.indexTabNavConBox').hide();
-            });
+        tabChance2:(function(){  
+            const chance2 = function(value1,value2){
+                const $btns1 = $(value1);
+                const $divs1 = $(value2);
+                $btns1.on('mouseover', function() {
+                    $(this).addClass('on').siblings(value1).removeClass('on');
+                    $divs1.eq(($(this).index())/2).show().siblings(value2).hide();
+                });
+            };
+            chance2('.topTenNavBox a','.topTenCon .clearfix');
         })(),
-        tabChance4:(function(){
-            const $btns3 = $('.topTenNavBox a');
-            const $divs3 = $('.topTenCon .clearfix');
-            $btns3.on('mouseover', function() {
-                console.log($divs3);
-                $(this).addClass('on').siblings("a").removeClass('on');
-                $divs3.eq($(this).index()).show().siblings(".clearfix").hide();
-            });
-        })(),
-        banner:(function(){
-
+        banner:(function() {
+            const $slide = $(".mainBanner");
+            const $picli = $('.mainBannerLi');
+            const $btnli = $('.smallBtn .smallUl li');
+            let $index = 0; 
+            let $timer = null;
+            
+            const banner=function(){
+              $btnli.on('mouseover',function(){
+                $(this).addClass('active').siblings("li").removeClass('active');
+                $picli.eq($(this).index()).stop(true).animate({
+                    opacity:1,
+                }).siblings("li").stop(true).animate({
+                    opacity:0,
+                });
+              })
+            }
+            banner()
+            const bannerFree=function(){
+                $index++;
+                if($index>$btnli.length-1){
+                    $index=0;
+                }
+               $btnli.eq($index).addClass('active').siblings("li").removeClass('active');
+               $picli.eq($index).animate({
+                opacity:1,
+                },1000).siblings("li").animate({
+                opacity:0,
+                },1000);
+            }
+            $slide.on('mouseout',function() {
+                $timer = setInterval(() => {
+                  bannerFree();
+                },1000)
+            })
+            $slide.on('mouseover',function() {
+                clearInterval($timer);
+            })
         })()
     }
 })
+
+
+
+
+
